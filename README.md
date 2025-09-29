@@ -15,7 +15,7 @@ For more details of our paper, please refer to our paper.
 ## Overview of RedReg
 
 <div align="center">    
-    <img src="pictures/fig2.pdf" style="width: 90%" />
+    <img src="pictures/fig2.png" style="width: 90%" />
 </div>
 
 ## Dataset 

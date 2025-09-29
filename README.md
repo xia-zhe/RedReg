@@ -37,4 +37,4 @@ python main_RedReg.py
 The pre-trained weights will be released soon.
 
 ## Acknowledgement
-We appreciate the code provided by InfoReg(https://github.com/GeWu-Lab/InfoReg_CVPR2025), which is very helpful to our research.
+We appreciate the code provided by [InfoReg](https://github.com/GeWu-Lab/InfoReg_CVPR2025), which is very helpful to our research.

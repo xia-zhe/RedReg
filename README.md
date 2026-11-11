@@ -16,12 +16,6 @@ python -m pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 \
 python -m pip install -r requirements.txt
 ```
 
-### Important
-
-The training data loader and the CPU-staged DataParallel transport were validated with PyTorch 1.8.0+cu111. Using a different PyTorch or torchvision version may change worker random-number behavior and numerical results. The RedReg recipe uses a global batch size of 64, local BatchNorm batch size of 32, seed 0, and two visible GPUs.
-
-The model class is exposed as `redreg.RedReg`. RedReg checkpoints retain their parameter names and can be loaded into this class.
-
 ### Downloading CREMA-D
 
 Download the original CREMA-D audio and video files from the [CREMA-D repository](https://github.com/CheyneyComputerScience/CREMA-D). The media are not included in this repository.

@@ -1,0 +1,10 @@
+# Python 3.8; install torch/torchvision as described in README.md first.
+numpy==1.23.5
+scipy==1.10.1
+librosa==0.9.2
+numba==0.58.1
+llvmlite==0.41.1
+resampy==0.4.3
+soundfile==0.13.1
+Pillow==10.4.0
+opencv-python-headless==4.8.1.78

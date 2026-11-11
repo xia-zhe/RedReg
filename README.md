@@ -92,17 +92,6 @@ REDREG_GPUS=0,1 bash scripts/run.sh \
 
 Evaluation uses the Gaussian posterior mean and fixed test frames. The RedReg protocol evaluates the test set after every epoch and records the test-best checkpoint; this is a benchmark reproduction protocol without an independent validation split. Report `epoch_050.pt` when a fixed 50-epoch result is required.
 
-### Results
-
-The following results are from the RedReg runs with seed 0 and the original fusion head:
-
-| Method | Latent dimension | β | Fixed epoch 50 | Test-best checkpoint |
-| --- | ---: | ---: | ---: | ---: |
-| RedReg (Joint) | 64 | 3.6 | 72.45% (539/744) | 73.92% (550/744, epoch 42) |
-| RedReg* (Star) | 512 | 0.3 | 77.28% (575/744) | 78.09% (581/744, epoch 47) |
-
-The test-best values are reported to document the RedReg reproduction and are subject to test-set checkpoint-selection bias. Validation-selected experiments use a separate protocol and are not included in this table. Additional BN recalibration, fusion calibration, adaptive compression, and multi-seed experiments are not part of the released RedReg source.
-
 ### Project Structure
 
 `train.py` - training, checkpoint recovery, and evaluation entry point.

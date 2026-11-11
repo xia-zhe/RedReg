@@ -90,26 +90,6 @@ REDREG_GPUS=0,1 bash scripts/run.sh \
   --evaluate runs/RedReg_star_seed0/checkpoints/epoch_050.pt
 ```
 
-Evaluation uses the Gaussian posterior mean and fixed test frames. The RedReg protocol evaluates the test set after every epoch and records the test-best checkpoint; this is a benchmark reproduction protocol without an independent validation split. Report `epoch_050.pt` when a fixed 50-epoch result is required.
-
-### Project Structure
-
-`train.py` - training, checkpoint recovery, and evaluation entry point.
-
-`configs/` - the released Joint and Star RedReg configurations.
-
-`redreg/` - the RedReg model, Gaussian bottleneck, KL loss, redundancy monitor, consistency gate, data cache, and random-number protocol.
-
-`models/` - the audio-visual ResNet and initialization structure inherited from the InfoReg codebase.
-
-`dataset/` - CREMA-D paired audio-visual data loading.
-
-`data/CREMAD/` - train/test split files and the fixed RedReg frame metadata.
-
-`scripts/` - CREMA-D preprocessing, audio-cache construction, DataParallel transport, and the training launcher.
-
-`utils/` - seed setup and parameter initialization utilities.
-
 ### Acknowledgement
 
 We thank the authors of [InfoReg](https://github.com/GeWu-Lab/InfoReg_CVPR2025) and [OGM-GE](https://github.com/GeWu-Lab/OGM-GE_CVPR2022) for their public audio-visual code and data-processing components. The inherited MIT notice is preserved in [LICENSE](LICENSE). Please follow the original CREMA-D dataset license when obtaining and redistributing the media.
